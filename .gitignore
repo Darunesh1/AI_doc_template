@@ -1,0 +1,18 @@
+# Local-only documentation. Only its README is tracked.
+# Use the "/*" form: ignoring the directory itself would block the "!" rule.
+docs/local/*
+!docs/local/README.md
+
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
