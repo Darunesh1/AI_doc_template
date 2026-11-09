@@ -1,0 +1,45 @@
+name: Feature request
+description: Propose a new capability or change in behaviour.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include secrets, credentials or real sensitive data in this issue.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem does this solve, and for whom?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What should change? Describe the behaviour, not the implementation.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: How will we know it is done? List checkable statements.
+      placeholder: "- [ ] ..."
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Other options and why they were not chosen. If this is a significant decision, it may need an ADR.
+    validations:
+      required: false
+  - type: textarea
+    id: docs
+    attributes:
+      label: Affected documentation
+      description: Which docs must change with this feature? Write "none" if none.
+    validations:
+      required: false
